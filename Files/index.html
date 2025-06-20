@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Usuário</h2>
+
+        <form action="processa_cadastro.php" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" required>
+            </div>
+
+            <div class="form-group">
+                <label for="perfil_imagem">Imagem de Perfil:</label>
+                <input type="file" id="perfil_imagem" name="perfil_imagem" accept="image/jpeg, image/png, image/gif, image/tiff">
+                <p class="file-instructions">Formatos permitidos: JPG, JPEG, PNG, TIFF, GIF. Tamanho máximo: 500 KB.</p>
+            </div>
+
+            <button type="submit" name="cadastrar">Cadastrar</button>
+        </form>
+    </div>
+</body>
+</html>
